@@ -1,0 +1,186 @@
+{
+  "version": 2,
+  "commit_on_completion": false,
+  "project_notes": [],
+  "labs": {
+    "1": {
+      "status": "ready_for_review",
+      "directory": "ЛР1",
+      "methodical_guide": "ЛР1/Лабораторная работа 1.docx",
+      "report_number": 1,
+      "theme": "Программная реализация алгоритмов шифрования",
+      "variant": "9",
+      "shared_resources": [],
+      "notes": [
+        "Реализованы шифр Гронсфельда и шифр двойной перестановки без криптографических библиотек."
+      ],
+      "next_step": "Проверить отчёт и подтвердить завершение лабораторной работы.",
+      "commands": {
+        "build_report": "bundled:lab_runner --root . --lab 1 --action build-report",
+        "verify": "bundled:lab_runner --root . --lab 1 --action quality-gate"
+      },
+      "tooling": {
+        "report_inspector": "bundled:inspect_docx"
+      },
+      "artifacts": [
+        "ЛР1/Лабораторная работа 1.docx",
+        "ЛР1/ciphers.py",
+        "ЛР1/screenshots/console_result.png",
+        "ЛР1/content.json",
+        "ЛР1/content_text.json",
+        "ЛР1/Отчет_ЛР1.docx",
+        "ЛР1/Отчет_ЛР1.pdf",
+        "ЛР1/text.docx",
+        "ЛР1/quality_gate.json"
+      ],
+      "verification": {
+        "status": "passed",
+        "checked_at": "2026-10-05T11:34:22Z",
+        "checks": [
+          "program_execution",
+          "content_references",
+          "report_docx",
+          "report_pdf",
+          "text_docx",
+          "quality_gate"
+        ],
+        "warnings": []
+      }
+    },
+    "2": {
+      "status": "completed",
+      "directory": "ЛР2",
+      "methodical_guide": "ЛР2/Лабораторная работа 2.docx",
+      "report_number": 2,
+      "theme": "Шифрование с использованием системы Виженера",
+      "variant": "9",
+      "shared_resources": [],
+      "notes": [
+        "Реализовано нативное приложение Python/Tkinter с русским алфавитом из 33 букв, включая «ё»."
+      ],
+      "next_step": "Лабораторная работа подтверждена пользователем и завершена.",
+      "commands": {
+        "build_report": "bundled:lab_runner --root . --lab 2 --action build-report",
+        "verify": "bundled:lab_runner --root . --lab 2 --action quality-gate"
+      },
+      "tooling": {
+        "report_inspector": "bundled:inspect_docx"
+      },
+      "artifacts": [
+        "ЛР2/Лабораторная работа 2.docx",
+        "ЛР2/vigenere_gui.py",
+        "ЛР2/screenshots/encryption.png",
+        "ЛР2/screenshots/decryption.png",
+        "ЛР2/content.json",
+        "ЛР2/content_text.json",
+        "ЛР2/Отчет_ЛР2.docx",
+        "ЛР2/Отчет_ЛР2.pdf",
+        "ЛР2/text.docx",
+        "ЛР2/quality_gate.json"
+      ],
+      "verification": {
+        "status": "passed",
+        "checked_at": "2026-10-05T12:07:10Z",
+        "checks": [
+          "program_execution",
+          "content_references",
+          "report_docx",
+          "report_pdf",
+          "text_docx",
+          "quality_gate"
+        ],
+        "warnings": []
+      }
+    },
+    "4": {
+      "status": "ready_for_review",
+      "directory": "ЛР4",
+      "methodical_guide": "ЛР4/Лабораторная работа 4.docx",
+      "report_number": 4,
+      "theme": "Количественная оценка стойкости парольной защиты",
+      "variant": "9",
+      "shared_resources": [],
+      "notes": [
+        "Веб-интерфейс на HTML/CSS/JavaScript использует crypto.getRandomValues() и проверку HIBP по k-anonymity.",
+        "Расчётная длина для варианта равна 5, но генератор применяет длину 8 согласно минимальному требованию методички."
+      ],
+      "next_step": "Проверить ЛР4 и подтвердить завершение лабораторной работы.",
+      "commands": {
+        "build_report": "bundled:lab_runner --root . --lab 4 --action build-report",
+        "verify": "bundled:lab_runner --root . --lab 4 --action quality-gate"
+      },
+      "tooling": {
+        "report_inspector": "bundled:inspect_docx"
+      },
+      "artifacts": [
+        "ЛР4/Лабораторная работа 4.docx",
+        "ЛР4/password_gui.py",
+        "ЛР4/screenshots/generator_result.png",
+        "ЛР4/content.json",
+        "ЛР4/content_text.json",
+        "ЛР4/Отчет_ЛР4.docx",
+        "ЛР4/Отчет_ЛР4.pdf",
+        "ЛР4/text.docx",
+        "ЛР4/quality_gate.json"
+      ],
+      "verification": {
+        "status": "passed",
+        "checked_at": "2026-10-05T13:33:45Z",
+        "checks": [
+          "program_execution",
+          "content_references",
+          "report_docx",
+          "report_pdf",
+          "text_docx",
+          "quality_gate"
+        ],
+        "warnings": []
+      }
+    },
+    "3": {
+      "status": "ready_for_review",
+      "directory": "ЛР3",
+      "methodical_guide": "ЛР3/Лабораторная работа 3.docx",
+      "report_number": 3,
+      "theme": "Криптоанализ шифров простой замены",
+      "variant": "9",
+      "shared_resources": [],
+      "notes": [
+        "Расшифровано сообщение варианта 9; числа в кавычках обрабатываются как часть исходного текста согласно методичке."
+      ],
+      "next_step": "Проверить материалы ЛР3 и подтвердить завершение лабораторной работы.",
+      "commands": {
+        "run_program": "py ЛР3/solve_variant9.py",
+        "build_report": "bundled:lab_runner --root . --lab 3 --action build-report",
+        "verify": "bundled:lab_runner --root . --lab 3 --action quality-gate"
+      },
+      "tooling": {
+        "report_inspector": "bundled:inspect_docx"
+      },
+      "artifacts": [
+        "ЛР3/Лабораторная работа 3.docx",
+        "ЛР3/solve_variant9.py",
+        "ЛР3/content.json",
+        "ЛР3/content_text.json",
+        "ЛР3/screenshots/console_result.png",
+        "ЛР3/Отчет_ЛР3.docx",
+        "ЛР3/Отчет_ЛР3.pdf",
+        "ЛР3/text.docx",
+        "ЛР3/quality_gate.json"
+      ],
+      "verification": {
+        "status": "passed",
+        "checked_at": "2026-10-05T12:43:35Z",
+        "checks": [
+          "program_execution",
+          "content_references",
+          "report_docx",
+          "report_pdf",
+          "text_docx",
+          "quality_gate"
+        ],
+        "warnings": []
+      }
+    }
+  }
+}

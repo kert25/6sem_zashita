@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "lab": 1,
+  "report_number": 1,
+  "status": "passed",
+  "checked_at": "2026-10-05T11:34:13Z",
+  "checks": [
+    "content_references",
+    "artifacts",
+    "report_docx",
+    "report_pdf",
+    "text_docx"
+  ],
+  "files": [
+    "ЛР1/Отчет_ЛР1.docx",
+    "ЛР1/Отчет_ЛР1.pdf",
+    "ЛР1/text.docx"
+  ],
+  "sha256": {
+    "_context.json": "10faf19d36059085f72892cad43f242808b7cf62f4cb0c6e8720dddee8b86731",
+    "ЛР1/ciphers.py": "d7d7e9c5e6f9cc3cdde2055920df800db3a5a813528b9ac5f533232aaf4d7618",
+    "ЛР1/content.json": "e21a15b473e81c1b55df1029f2e9e9ebe961351b205a999d4455599aaccc420c",
+    "ЛР1/content_text.json": "9456e587cb7817d4c922f9b7878b23d998d9b48d011ee495bc1034e339bbef48",
+    "ЛР1/screenshots/console_result.png": "6a820becbee35e96cce8031245838922fa7994292ed06f0cbac442f1c79fe593",
+    "ЛР1/text.docx": "9678ddc7b3be434a90910d9072265d62e6dffb5ced9c7f95308110030805cfdd",
+    "ЛР1/Лабораторная работа 1.docx": "8e5350ecc335cb1290ded257c32fb77c4396aa9de0fbcfa0504c2d6571d6f9a6",
+    "ЛР1/Отчет_ЛР1.docx": "ebe54f5f1e7b41107ccde1ffd106994bfc5e1b3f7905199cbbb5736d1ffa1128",
+    "ЛР1/Отчет_ЛР1.pdf": "43de368d34baaf9e06e91e6e8b1e2218313c4da4ed3ec58fccda526e8d3d4677"
+  }
+}

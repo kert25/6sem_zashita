@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "lab": 2,
+  "report_number": 2,
+  "status": "passed",
+  "checked_at": "2026-10-05T12:06:58Z",
+  "checks": [
+    "content_references",
+    "artifacts",
+    "report_docx",
+    "report_pdf",
+    "text_docx"
+  ],
+  "files": [
+    "ЛР2/Отчет_ЛР2.docx",
+    "ЛР2/Отчет_ЛР2.pdf",
+    "ЛР2/text.docx"
+  ],
+  "sha256": {
+    "_context.json": "10faf19d36059085f72892cad43f242808b7cf62f4cb0c6e8720dddee8b86731",
+    "ЛР2/content.json": "b4342134c55b832704fb1ad00c7c74c5fbdd35fd8d2ce81804a4f7a6e2c6e39f",
+    "ЛР2/content_text.json": "d9bd43262682c8c16e7d6d252431f110e026c6ab45d58440a266a7caad7ba467",
+    "ЛР2/screenshots/decryption.png": "271a5591cb946f46f10db8d1ee827f94f00c4e93c397666c7ac922d2949786ba",
+    "ЛР2/screenshots/encryption.png": "369ed20fde8aedef5da4180a4303ac00587d98011f76d14ca9248e4e8b74edc4",
+    "ЛР2/text.docx": "a3d9408c85a1759ef745b3236e7d710e81ff4d0e7da2f3cdc4080a12c33fb637",
+    "ЛР2/vigenere_gui.py": "869407510670af6abdbdfa3a677aebd7b412b95109ec71a05147653fec7eeae2",
+    "ЛР2/Лабораторная работа 2.docx": "fc084326a1b0d9eff1fcc512b0d08546cec38d3cd3fd2baad22ffb4218fb2f0a",
+    "ЛР2/Отчет_ЛР2.docx": "2e11c8f0506a903d9a5ba419113402fabd79cfeaf713333e0da492f387e23960",
+    "ЛР2/Отчет_ЛР2.pdf": "4b4bfd7ea2687871fe87877304e662dd51ccb28d480e5a721cfb7da69b414a1c"
+  }
+}

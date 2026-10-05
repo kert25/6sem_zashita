@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "lab": 3,
+  "report_number": 3,
+  "status": "passed",
+  "checked_at": "2026-10-05T12:43:26Z",
+  "checks": [
+    "content_references",
+    "artifacts",
+    "report_docx",
+    "report_pdf",
+    "text_docx"
+  ],
+  "files": [
+    "ЛР3/Отчет_ЛР3.docx",
+    "ЛР3/Отчет_ЛР3.pdf",
+    "ЛР3/text.docx"
+  ],
+  "sha256": {
+    "_context.json": "10faf19d36059085f72892cad43f242808b7cf62f4cb0c6e8720dddee8b86731",
+    "ЛР3/content.json": "e126b7b858587548a1651457dd19ae3b781a0ee740cbcf42b4e9599f7daa8855",
+    "ЛР3/content_text.json": "27c1d44bc819812da90cef4b2dec23b643da26f50fbb8ad38f0fcce57b7b9170",
+    "ЛР3/screenshots/console_result.png": "3cb0706f76a34f4d3bc1517d5bf45359f3e4e2ecaca2c229ca1975c9235aeb16",
+    "ЛР3/solve_variant9.py": "f9e335570667c4b32582cbf892eb79e2330565d0d790760fc1c056a050d4775e",
+    "ЛР3/text.docx": "8ead434baed464208d5156a9f56ab28ceb6fe333d6c564e66c4bd3f49cd34612",
+    "ЛР3/Лабораторная работа 3.docx": "8e9d782b70a63fa137cabb0d9794a4e941470524858552cf2596adce6eaf7267",
+    "ЛР3/Отчет_ЛР3.docx": "a42ff5c3df1623855013e756b9809e8a82fc672730ca915b33ca0dcd28dd0fc8",
+    "ЛР3/Отчет_ЛР3.pdf": "e3091b0e94c45922e53170acbe3bb65b09b9ba71e45afa9646439b4144e7d170"
+  }
+}
