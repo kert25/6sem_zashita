@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "lab": 6,
+  "report_number": 6,
+  "status": "passed",
+  "checked_at": "2026-10-05T14:05:48Z",
+  "checks": [
+    "content_references",
+    "artifacts",
+    "report_docx",
+    "report_pdf",
+    "text_docx"
+  ],
+  "files": [
+    "ЛР6/Отчет_ЛР6.docx",
+    "ЛР6/Отчет_ЛР6.pdf",
+    "ЛР6/text.docx"
+  ],
+  "sha256": {
+    "_context.json": "10faf19d36059085f72892cad43f242808b7cf62f4cb0c6e8720dddee8b86731",
+    "ЛР6/content.json": "2ecca631e280adbaa21f95082ee730e75839880ed54cbb8ce12c90c1722ada51",
+    "ЛР6/content_text.json": "630b5ba93929edbe7903a5bd4d249742042a015be4e14ba616b460ccede08f01",
+    "ЛР6/screenshots/console_result.png": "6283ce7c32c286a41435e4bc4fd8d5d2626f68bcef08fa4d7b30a6bb4f17e384",
+    "ЛР6/stego_lab.py": "819c444385044af2a487ed30405adb88a29c4e20160ca35e14737a0dc7afd3d6",
+    "ЛР6/text.docx": "c50b4dcc05ae4714e23259c4a78db2f0806827e1d3e8d8595c5cd00445df8155",
+    "ЛР6/Лабораторная работа 6.docx": "282690bb75d50d5e3d6246a34212b9a11204328346b8f0a4b63d81a23cdc0759",
+    "ЛР6/Отчет_ЛР6.docx": "a3f64aa26e65a033b5de434d98171879fb0fe39e83833e595fa4d1b6594c046c",
+    "ЛР6/Отчет_ЛР6.pdf": "afc75943ed047e2c3d33de69a1d7dc03fee5029e8c9e9fa7365697a9afdfdb7d"
+  }
+}

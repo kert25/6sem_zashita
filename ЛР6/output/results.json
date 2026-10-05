@@ -1,0 +1,31 @@
+{
+  "measurements": [
+    {
+      "method": "Программная реализация LSB",
+      "container_bytes": 14579,
+      "payload_bytes": 685,
+      "result_bytes": 23834,
+      "K": 1.634817,
+      "P_percent": 2.874,
+      "D_bits_per_pixel": 0.005708,
+      "O_bytes": 8570
+    },
+    {
+      "method": "Архив (конкатенация)",
+      "container_bytes": 14579,
+      "payload_bytes": 1248,
+      "result_bytes": 15827,
+      "K": 1.085603,
+      "P_percent": 7.8853,
+      "D_bits_per_pixel": 0.0104,
+      "O_bytes": 0
+    }
+  ],
+  "survival": {
+    "rotation_90.png": "Ошибка: архивная структура удалена при перекодировании",
+    "resized_50.png": "Ошибка: архивная структура удалена при перекодировании",
+    "cropped.png": "Ошибка: архивная структура удалена при перекодировании"
+  },
+  "capacity_bytes": 360000,
+  "payload_sha256_match": true
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "lab": 7,
+  "report_number": 7,
+  "status": "passed",
+  "checked_at": "2026-10-05T14:22:35Z",
+  "checks": [
+    "content_references",
+    "artifacts",
+    "report_docx",
+    "report_pdf",
+    "text_docx"
+  ],
+  "files": [
+    "ЛР7/Отчет_ЛР7.docx",
+    "ЛР7/Отчет_ЛР7.pdf",
+    "ЛР7/text.docx"
+  ],
+  "sha256": {
+    "_context.json": "10faf19d36059085f72892cad43f242808b7cf62f4cb0c6e8720dddee8b86731",
+    "ЛР7/content.json": "044d915e4703da1911209f3ef2e39bbea5667584ff1c9e6662402596677c27a6",
+    "ЛР7/content_text.json": "8e2c22130351d6205a08e2a3c199553be2ed88126f7cab99d28674c280f6934d",
+    "ЛР7/decrypted_message.txt": "a11efb8272764742a451974d06c08239746fb1d55f82c00c9ea70a08e0f17187",
+    "ЛР7/encrypted_message.hex": "4a3cdb3388140f8f5f5b3e39df527cd242d4d1415f836b9db2f37dcde2b7e7d8",
+    "ЛР7/magma_lab.py": "b6aa395d27fb3d962db8ab323418a4b0f922dc2ef6fa73df2e02145ae241a387",
+    "ЛР7/round_scheme.png": "b7014a5ce9ade14a0b0f033ccc489903ffb3a29ac5354ed14a253e9a92b01e30",
+    "ЛР7/screenshots/console_result.png": "5d75fbfe89ac7396c379a00bbdc3933dbe5052dc3050cf51b27ed3145953063e",
+    "ЛР7/text.docx": "38c51787cf1a9faf4a1f8b905bbc7318fd0583d278b05968b6718c68ac607363",
+    "ЛР7/Лабораторная работа 7.docx": "fac8c1931f8922457b1905f62282c0c089fe1836761b0b77e984dc522b029c23",
+    "ЛР7/Отчет_ЛР7.docx": "cd6dd9367f8c4fc24cb3c4b980fe032b8b8627ce95686fe2d62f367a15ad4b7b",
+    "ЛР7/Отчет_ЛР7.pdf": "72121ecb189a770ac55a76d558c960223d24ada0fae27345194ea672bccea58d"
+  }
+}

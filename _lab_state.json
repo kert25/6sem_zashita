@@ -181,6 +181,156 @@
         ],
         "warnings": []
       }
+    },
+    "6": {
+      "status": "ready_for_review",
+      "directory": "ЛР6",
+      "methodical_guide": "ЛР6/Лабораторная работа 6.docx",
+      "report_number": 6,
+      "theme": "Изучение методов стеганографии для скрытия конфиденциальной информации",
+      "variant": "9",
+      "shared_resources": [],
+      "notes": [
+        "Реализованы LSB-встраивание графического файла с равномерным распределением битов, файловая конкатенация с ZIP-архивом, усиленная визуализация LSB-различий и проверка живучести."
+      ],
+      "next_step": "Проверить материалы ЛР6 и подтвердить завершение лабораторной работы.",
+      "commands": {
+        "run_program": "py ЛР6/stego_lab.py",
+        "cli_evidence": "py -c \"import runpy,pathlib; runpy.run_path(str(next(pathlib.Path('.').glob('*/*stego_lab.py'))),run_name='__main__')\"",
+        "build_report": "bundled:lab_runner --root . --lab 6 --action build-report",
+        "build_text": "bundled:lab_runner --root . --lab 6 --action build-text",
+        "build_pdf": "bundled:lab_runner --root . --lab 6 --action build-pdf",
+        "verify": "bundled:lab_runner --root . --lab 6 --action quality-gate"
+      },
+      "tooling": {
+        "report_inspector": "bundled:inspect_docx"
+      },
+      "artifacts": [
+        "ЛР6/Лабораторная работа 6.docx",
+        "ЛР6/stego_lab.py",
+        "ЛР6/data",
+        "ЛР6/output",
+        "ЛР6/content.json",
+        "ЛР6/content_text.json",
+        "ЛР6/screenshots/console_result.png",
+        "ЛР6/Отчет_ЛР6.docx",
+        "ЛР6/Отчет_ЛР6.pdf",
+        "ЛР6/text.docx",
+        "ЛР6/quality_gate.json"
+      ],
+      "verification": {
+        "status": "passed",
+        "checked_at": "2026-10-05T14:05:48Z",
+        "checks": [
+          "program_execution",
+          "content_references",
+          "report_docx",
+          "report_pdf",
+          "text_docx",
+          "quality_gate"
+        ],
+        "warnings": []
+      }
+    },
+    "9": {
+      "status": "completed",
+      "directory": "ЛР9",
+      "methodical_guide": "ЛР9/Лабораторная работа 9.docx",
+      "report_number": 9,
+      "theme": "Защита электронных документов с использованием цифровых водяных знаков",
+      "variant": "9",
+      "shared_resources": [],
+      "notes": [
+        "Реализован воспроизводимый локальный эксперимент: видимый диагональный ЦВЗ с прозрачностью 40% и тестирование восьми воздействий для JPEG, PNG, GIF, BMP и TIFF."
+      ],
+      "next_step": "Лабораторная работа завершена и отправлена в удалённый репозиторий.",
+      "commands": {
+        "run_program": "py ЛР9/watermark_lab.py",
+        "cli_evidence": "py -c \"import runpy,pathlib; runpy.run_path(str(next(pathlib.Path('.').glob('*/*watermark_lab.py'))),run_name='__main__')\"",
+        "build_report": "bundled:lab_runner --root . --lab 9 --action build-report",
+        "build_text": "bundled:lab_runner --root . --lab 9 --action build-text",
+        "build_pdf": "bundled:lab_runner --root . --lab 9 --action build-pdf",
+        "verify": "bundled:lab_runner --root . --lab 9 --action quality-gate"
+      },
+      "tooling": {
+        "report_inspector": "bundled:inspect_docx"
+      },
+      "artifacts": [
+        "ЛР9/Лабораторная работа 9.docx",
+        "ЛР9/watermark_lab.py",
+        "ЛР9/output",
+        "ЛР9/content.json",
+        "ЛР9/content_text.json",
+        "ЛР9/screenshots/console_result.png",
+        "ЛР9/Отчет_ЛР9.docx",
+        "ЛР9/Отчет_ЛР9.pdf",
+        "ЛР9/text.docx",
+        "ЛР9/quality_gate.json"
+      ],
+      "verification": {
+        "status": "passed",
+        "checked_at": "2026-10-05T14:52:02Z",
+        "checks": [
+          "program_execution",
+          "content_references",
+          "report_docx",
+          "report_pdf",
+          "text_docx",
+          "quality_gate"
+        ],
+        "warnings": []
+      }
+    },
+    "7": {
+      "status": "ready_for_review",
+      "directory": "ЛР7",
+      "methodical_guide": "ЛР7/Лабораторная работа 7.docx",
+      "report_number": 7,
+      "theme": "Программная реализация шифрования алгоритмом «Магма»",
+      "variant": "9",
+      "shared_resources": [],
+      "notes": [
+        "Реализован ГОСТ Р 34.12-2015 «Магма» без криптографических библиотек; корректность подтверждается контрольным вектором RFC 8891."
+      ],
+      "next_step": "Проверить материалы ЛР7 и подтвердить завершение лабораторной работы.",
+      "commands": {
+        "run_program": "py ЛР7/magma_lab.py",
+        "cli_evidence": "py -c \"import runpy,pathlib; runpy.run_path(str(next(pathlib.Path('.').glob('*/*magma_lab.py'))),run_name='__main__')\"",
+        "build_report": "bundled:lab_runner --root . --lab 7 --action build-report",
+        "build_text": "bundled:lab_runner --root . --lab 7 --action build-text",
+        "build_pdf": "bundled:lab_runner --root . --lab 7 --action build-pdf",
+        "verify": "bundled:lab_runner --root . --lab 7 --action quality-gate"
+      },
+      "tooling": {
+        "report_inspector": "bundled:inspect_docx"
+      },
+      "artifacts": [
+        "ЛР7/Лабораторная работа 7.docx",
+        "ЛР7/magma_lab.py",
+        "ЛР7/content.json",
+        "ЛР7/content_text.json",
+        "ЛР7/round_scheme.png",
+        "ЛР7/encrypted_message.hex",
+        "ЛР7/decrypted_message.txt",
+        "ЛР7/screenshots/console_result.png",
+        "ЛР7/Отчет_ЛР7.docx",
+        "ЛР7/Отчет_ЛР7.pdf",
+        "ЛР7/text.docx",
+        "ЛР7/quality_gate.json"
+      ],
+      "verification": {
+        "status": "passed",
+        "checked_at": "2026-10-05T14:17:00Z",
+        "checks": [
+          "program_execution",
+          "content_references",
+          "report_docx",
+          "report_pdf",
+          "text_docx",
+          "quality_gate"
+        ],
+        "warnings": []
+      }
     }
   }
 }
