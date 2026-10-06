@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "lab": 5,
+  "report_number": 5,
+  "status": "passed",
+  "checked_at": "2026-10-06T16:59:37Z",
+  "checks": [
+    "content_references",
+    "artifacts",
+    "report_docx",
+    "report_pdf",
+    "text_docx"
+  ],
+  "files": [
+    "ЛР5/Отчет_ЛР5.docx",
+    "ЛР5/Отчет_ЛР5.pdf",
+    "ЛР5/text.docx"
+  ],
+  "sha256": {
+    "_context.json": "10faf19d36059085f72892cad43f242808b7cf62f4cb0c6e8720dddee8b86731",
+    "ЛР5/checksum_note.sha256": "4ea9aa283e1104c435c06d3cb91689019160a6c53880817e38fcabb3d3ab90c1",
+    "ЛР5/content.json": "b10e94e7aad2fda069722dfb8e073415f92994d9090f67566ee1f533f51d2019",
+    "ЛР5/content_text.json": "c699ee8966cfc7b35fcb10d933435645798ebed7b9b1919c1aff018afbe36e07",
+    "ЛР5/key_details.txt": "81ad62f603a3611a4e8bcee23331967f915355d8848b257318ff0a146931680f",
+    "ЛР5/key_privat.asc": "97fb572bd26ca48ed4b96afa74eea1aa47e7289587896a8d6ae242973f4270d0",
+    "ЛР5/key_public.asc": "66d3bda00881af6af9cf62a51e38da685a1c5ccece29682cd1cd39f50f3b94a9",
+    "ЛР5/notion.doc": "1b1716e17263a4c2c164b3e52f1dc02a4942cfcf4fe94fa4cb642053c79afa70",
+    "ЛР5/notion.doc.gpg": "f567d9303fa903591ea4450fa88eff5bd1c2885c5f3642452da637cf666cf07e",
+    "ЛР5/notion.doc.sig": "4d27943bb82a140838b273bc832d67d868be1c58b21788828228a390f6def380",
+    "ЛР5/screenshots/console_result.png": "80fc04d86239c8a7194298e3292b3055adff33f3ca715cd3159ce424f0d39954",
+    "ЛР5/screenshots/kleopatra_certificates.png": "55ec5c5c6cf0522a238beb17ad1cffabc963b8a1f88ce99616f76aa12ebfbc9f",
+    "ЛР5/teacher_key_check.txt": "8c823d9543016c9c67aee6834099d5834778e38a607704f59b076167e236e74c",
+    "ЛР5/text.docx": "ef679bafb1e5b1ee5ca45ca855a64da78267064e62ac24941f3ee2cdfb4139f1",
+    "ЛР5/verify_lab.py": "567a857035218e3c858c50db7da22ae5f36bc4ce072e356d75012bc260094f03",
+    "ЛР5/Лабораторная работа 5.docx": "dec976d5cc2a247c18507892b9a3d0f3d4080d532105ebe355f03916b28f166b",
+    "ЛР5/Отчет_ЛР5.docx": "8cb658f7b8cc9b5e6425407609fe25596b877618be95d1899084890a42232e94",
+    "ЛР5/Отчет_ЛР5.pdf": "c5c26f26d53d6e850d79346e2fc76b31e760432b5a89a38d516533102a86e65f"
+  }
+}

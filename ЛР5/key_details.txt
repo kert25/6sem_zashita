@@ -1,0 +1,4 @@
+pub   rsa2048 2026-10-06 [SCE]
+      1ABF 8239 7FBD 7021 46F4  F2C9 DB83 3826 6385 E048
+uid           [ultimate] K. M. Laukert (LR5) <km.laukert.lr5@example.invalid>
+

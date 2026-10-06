@@ -232,6 +232,65 @@
         "warnings": []
       }
     },
+    "5": {
+      "status": "ready_for_review",
+      "directory": "ЛР5",
+      "methodical_guide": "ЛР5/Лабораторная работа 5.docx",
+      "report_number": 5,
+      "theme": "Цифровые подписи и сертификаты в GNU Privacy Guard. Система управления ключей Kleopatra",
+      "variant": "9",
+      "shared_resources": [
+        "Nataly_0xEA91525F70D5632C_public.asc",
+        "Вариант 9.docx.sig"
+      ],
+      "notes": [
+        "Вариант 9: подготовить документ с определением XSS, подписать и зашифровать его средствами GnuPG."
+      ],
+      "next_step": "Проверить материалы ЛР5 и подтвердить завершение лабораторной работы.",
+      "commands": {
+        "run_program": "py ЛР5/verify_lab.py",
+        "build_report": "bundled:lab_runner --root . --lab 5 --action build-report",
+        "verify": "bundled:lab_runner --root . --lab 5 --action quality-gate"
+      },
+      "tooling": {
+        "report_inspector": "bundled:inspect_docx"
+      },
+      "artifacts": [
+        "ЛР5/Лабораторная работа 5.docx",
+        "ЛР5/verify_lab.py",
+        "ЛР5/notion.doc",
+        "ЛР5/notion.doc.gpg",
+        "ЛР5/notion.doc.sig",
+        "ЛР5/key_public.asc",
+        "ЛР5/key_privat.asc",
+        "ЛР5/checksum_note.sha256",
+        "ЛР5/key_details.txt",
+        "ЛР5/teacher_key_check.txt",
+        "ЛР5/screenshots/console_result.png",
+        "ЛР5/screenshots/kleopatra_certificates.png",
+        "ЛР5/content.json",
+        "ЛР5/content_text.json",
+        "ЛР5/Отчет_ЛР5.docx",
+        "ЛР5/Отчет_ЛР5.pdf",
+        "ЛР5/text.docx",
+        "ЛР5/quality_gate.json"
+      ],
+      "verification": {
+        "status": "passed",
+        "checked_at": "2026-10-06T16:59:37Z",
+        "checks": [
+          "program_execution",
+          "content_references",
+          "report_docx",
+          "report_pdf",
+          "text_docx",
+          "quality_gate"
+        ],
+        "warnings": [
+          "Исходный файл Вариант 9.docx для проверки приложенной отсоединённой подписи отсутствует."
+        ]
+      }
+    },
     "9": {
       "status": "completed",
       "directory": "ЛР9",
@@ -343,7 +402,7 @@
       "notes": [
         "Учебная реализация модифицированного RSA с UTF-8, случайным стартовым элементом цепочки и SHA-256 для ЭЦП."
       ],
-      "next_step": "Лабораторная работа подтверждена пользователем, завершена и отправлена в удалённый репозиторий."
+      "next_step": "Лабораторная работа подтверждена пользователем, завершена и отправлена в удалённый репозиторий.",
       "commands": {
         "run_program": "py ЛР8/rsa_lab.py",
         "build_report": "bundled:lab_runner --root . --lab 8 --action build-report",

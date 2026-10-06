@@ -1,0 +1,8 @@
+pub   ed25519 2026-04-08 [SC] [expires: 2029-04-08]
+      A23FD318CA29D01FB97116E5EA91525F70D5632C
+uid           [  full  ] Nataly <tek_kuleshova@mail.ru>
+sig!3    N   EA91525F70D5632C 2026-04-08  [self-signature]
+sig!         DB8338266385E048 2026-10-06  K. M. Laukert (LR5) <km.laukert.lr5@example.invalid>
+sub   cv25519 2026-04-08 [E] [expires: 2029-04-08]
+sig!     N   EA91525F70D5632C 2026-04-08  [self-signature]
+
