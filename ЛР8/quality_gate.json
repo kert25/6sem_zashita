@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "lab": 8,
+  "report_number": 8,
+  "status": "passed",
+  "checked_at": "2026-10-06T15:56:03Z",
+  "checks": [
+    "content_references",
+    "artifacts",
+    "report_docx",
+    "report_pdf",
+    "text_docx"
+  ],
+  "files": [
+    "ЛР8/Отчет_ЛР8.docx",
+    "ЛР8/Отчет_ЛР8.pdf",
+    "ЛР8/text.docx"
+  ],
+  "sha256": {
+    "_context.json": "10faf19d36059085f72892cad43f242808b7cf62f4cb0c6e8720dddee8b86731",
+    "ЛР8/content.json": "7774be560ee821520801a5a252b2128942409efcc0edecd19d2684d4d7beb967",
+    "ЛР8/content_text.json": "266143b62f7bf51f5ad8046fde7f8a420d5885ba74e0c9daeb29c7e369399342",
+    "ЛР8/rsa_lab.py": "079e4a4013e1820e6d3f811d04b7d0e9e416883d180cdb22b92f58c3980da20a",
+    "ЛР8/screenshots/gui_result.png": "08a170cf27e7624df6ba3b69036b2040633e3d91bfd12a282dbcddefedba8ef9",
+    "ЛР8/text.docx": "8ea328595c6f24d0cf0f00ce0b5cb9fb3f0078ac5662d204e7fdfbeb4e40395e",
+    "ЛР8/Лабораторная работа 8.docx": "b6ce211898b064540de4fb67d66dbfe84213d99f3f85535f336891a871002b03",
+    "ЛР8/Отчет_ЛР8.docx": "08d36b354b1e0e783a79f3eb685c1c95d26f61a6516fb52be93d50ba934cb6c7",
+    "ЛР8/Отчет_ЛР8.pdf": "3bd56fd154f3538f880450922050da1df52775d5b46347314d6f744bae6726d8"
+  }
+}

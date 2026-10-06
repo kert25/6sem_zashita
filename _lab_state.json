@@ -331,6 +331,51 @@
         ],
         "warnings": []
       }
+    },
+    "8": {
+      "status": "completed",
+      "directory": "ЛР8",
+      "methodical_guide": "ЛР8/Лабораторная работа 8.docx",
+      "report_number": 8,
+      "theme": "Алгоритм шифрования RSA",
+      "variant": "9",
+      "shared_resources": [],
+      "notes": [
+        "Учебная реализация модифицированного RSA с UTF-8, случайным стартовым элементом цепочки и SHA-256 для ЭЦП."
+      ],
+      "next_step": "Лабораторная работа подтверждена пользователем, завершена и отправлена в удалённый репозиторий."
+      "commands": {
+        "run_program": "py ЛР8/rsa_lab.py",
+        "build_report": "bundled:lab_runner --root . --lab 8 --action build-report",
+        "verify": "bundled:lab_runner --root . --lab 8 --action quality-gate"
+      },
+      "tooling": {
+        "report_inspector": "bundled:inspect_docx"
+      },
+      "artifacts": [
+        "ЛР8/Лабораторная работа 8.docx",
+        "ЛР8/rsa_lab.py",
+        "ЛР8/screenshots/gui_result.png",
+        "ЛР8/content.json",
+        "ЛР8/content_text.json",
+        "ЛР8/Отчет_ЛР8.docx",
+        "ЛР8/Отчет_ЛР8.pdf",
+        "ЛР8/text.docx",
+        "ЛР8/quality_gate.json"
+      ],
+      "verification": {
+        "status": "passed",
+        "checked_at": "2026-10-06T15:56:39Z",
+        "checks": [
+          "program_execution",
+          "content_references",
+          "report_docx",
+          "report_pdf",
+          "text_docx",
+          "quality_gate"
+        ],
+        "warnings": []
+      }
     }
   }
 }
