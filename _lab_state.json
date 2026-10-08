@@ -101,8 +101,9 @@
       "variant": "9",
       "shared_resources": [],
       "notes": [
-        "Веб-интерфейс на HTML/CSS/JavaScript использует crypto.getRandomValues() и проверку HIBP по k-anonymity.",
-        "Расчётная длина для варианта равна 5, но генератор применяет длину 8 согласно минимальному требованию методички."
+        "Нативное приложение Python/Tkinter использует secrets.choice() и проверку HIBP по k-anonymity.",
+        "Расчётная длина для варианта равна 5, но генератор применяет длину 8 согласно минимальному требованию методички.",
+        "Энтропийные метрики рассчитываются по формулам Ereal, Ir и Kn из методички; интерфейс выводит заключение о соответствии требуемой стойкости."
       ],
       "next_step": "Проверить ЛР4 и подтвердить завершение лабораторной работы.",
       "commands": {
@@ -125,7 +126,7 @@
       ],
       "verification": {
         "status": "passed",
-        "checked_at": "2026-10-05T13:33:45Z",
+        "checked_at": "2026-10-07T00:00:00Z",
         "checks": [
           "program_execution",
           "content_references",
@@ -292,7 +293,7 @@
       }
     },
     "9": {
-      "status": "completed",
+      "status": "ready_for_review",
       "directory": "ЛР9",
       "methodical_guide": "ЛР9/Лабораторная работа 9.docx",
       "report_number": 9,
@@ -302,7 +303,7 @@
       "notes": [
         "Реализован воспроизводимый локальный эксперимент: видимый диагональный ЦВЗ с прозрачностью 40% и тестирование восьми воздействий для JPEG, PNG, GIF, BMP и TIFF."
       ],
-      "next_step": "Лабораторная работа завершена и отправлена в удалённый репозиторий.",
+      "next_step": "Проверить обновлённые изображения и подтвердить завершение лабораторной работы.",
       "commands": {
         "run_program": "py ЛР9/watermark_lab.py",
         "cli_evidence": "py -c \"import runpy,pathlib; runpy.run_path(str(next(pathlib.Path('.').glob('*/*watermark_lab.py'))),run_name='__main__')\"",
@@ -328,7 +329,7 @@
       ],
       "verification": {
         "status": "passed",
-        "checked_at": "2026-10-05T14:52:02Z",
+        "checked_at": "2026-10-07T00:00:00Z",
         "checks": [
           "program_execution",
           "content_references",

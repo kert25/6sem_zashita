@@ -3,7 +3,7 @@
   "lab": 9,
   "report_number": 9,
   "status": "passed",
-  "checked_at": "2026-10-05T14:52:02Z",
+  "checked_at": "2026-10-07T15:47:18Z",
   "checks": [
     "content_references",
     "artifacts",
@@ -22,9 +22,9 @@
     "ЛР9/content_text.json": "c2f1d45ec176ba161ecdb06612e739b08e98b10a825a17a6ebcbafa51496712c",
     "ЛР9/screenshots/console_result.png": "e965fe9a322e61c81d18d8f8532eca1f12456eacc0e04c25190ccd150f4acabf",
     "ЛР9/text.docx": "a1dbfbc8b897dc779a1b69acba8ddd938879bb46befaa9aa23c844bd055ecdf2",
-    "ЛР9/watermark_lab.py": "75f66a11d3ab29955fed286ae97db86e886266a277b3a2ddd69cd6cc3ecd7d22",
+    "ЛР9/watermark_lab.py": "d0bf38d39ac0ffc00f70c408d26658a6fe33eee9fce6bb55d5959a023e7fbdb5",
     "ЛР9/Лабораторная работа 9.docx": "875f60363c33c7266f0c7993256fc13de78e0bceebbb515a75f64e07c3ad308b",
-    "ЛР9/Отчет_ЛР9.docx": "0c3a68e879653800c4f2909f59781171e7f386ecc3aff56961dd5bc42cf942c2",
-    "ЛР9/Отчет_ЛР9.pdf": "aa31e6c95e36b1fc11437bf672ac82faaa6bd199e49864bda5d719b295a6eeb9"
+    "ЛР9/Отчет_ЛР9.docx": "4df4d5b40268b5ab934f8698348a66369c5c5784efa80083b19192653ba6a400",
+    "ЛР9/Отчет_ЛР9.pdf": "942c2aa07643165c5bbf5e72541ed9431ec15ab038c334f2acf1af7ec6a68535"
   }
 }

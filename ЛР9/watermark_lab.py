@@ -89,16 +89,18 @@ def transform(image: Image.Image, action: str, original: Image.Image) -> Image.I
         cropped = image.crop((int(w*.1), int(h*.1), int(w*.9), int(h*.9)))
         return cropped.resize((w, h), Image.Resampling.LANCZOS)
     if action == "04_rotate_restore":
-        # Поворот на расширенном холсте и последующая центральная обрезка
-        # предотвращают появление чёрных треугольников по краям.
-        pad = 300
-        canvas = Image.new("RGB", (w + 2 * pad, h + 2 * pad), "#1676b2")
-        canvas.paste(image, (pad, pad))
-        canvas = canvas.rotate(15, resample=Image.Resampling.BICUBIC, fillcolor="#1676b2")
-        canvas = canvas.rotate(-15, resample=Image.Resampling.BICUBIC, fillcolor="#1676b2")
-        return canvas.crop((pad, pad, pad + w, pad + h))
+        # Двойной поворот сохраняет итоговый размер, но добавляет заметные
+        # интерполяционные искажения и области заполнения по углам.
+        rotated = image.rotate(15, resample=Image.Resampling.BICUBIC, fillcolor="#1676b2")
+        return rotated.rotate(-15, resample=Image.Resampling.BICUBIC, fillcolor="#1676b2")
     if action == "05_reduce_50": return image.resize((w//2, h//2), Image.Resampling.LANCZOS)
-    if action == "06_enlarge_150": return image.resize((int(w*1.5), int(h*1.5)), Image.Resampling.LANCZOS)
+    if action == "06_enlarge_150":
+        # Оставляем итоговый холст исходного размера: увеличение до 150%
+        # и центральная обрезка наглядно показывают масштаб и пикселизацию.
+        enlarged = image.resize((int(w * 1.5), int(h * 1.5)), Image.Resampling.NEAREST)
+        left = (enlarged.width - w) // 2
+        top = (enlarged.height - h) // 2
+        return enlarged.crop((left, top, left + w, top + h))
     if action == "07_blur_contrast": return ImageEnhance.Contrast(image.filter(ImageFilter.GaussianBlur(2))).enhance(1.45)
     if action == "08_removed":
         # Имитация ретуши: текст удалён, но в его области остаётся сглаженная полоса.

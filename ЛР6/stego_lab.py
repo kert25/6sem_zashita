@@ -60,7 +60,7 @@ def make_sources() -> None:
     draw.ellipse((16, 16, 48, 48), fill="crimson")
     draw.text((20, 26), "LR6", fill="white")
     secret.save(DATA / "secret.png", "PNG")
-    Image.open(DATA / "carrier.png").save(DATA / "cat.jpg", "JPEG", quality=92)
+    Image.open(DATA / "carrier.png").save(DATA / "pic.jpg", "JPEG", quality=92)
     (DATA / "Document1.txt").write_text(
         "Стеганография — метод сокрытия самого факта передачи информации "+
         "внутри внешне обычного контейнера.\n", encoding="utf-8")
@@ -164,7 +164,7 @@ def main() -> None:
 
     # Задание 2: архив с двумя документами, присоединённый к JPEG.
     archive([DATA / "Document1.txt", DATA / "Document2.txt"], OUT / "Documents.zip", DATA)
-    concatenate(DATA / "cat.jpg", OUT / "Documents.zip", OUT / "cat_new.jpg")
+    concatenate(DATA / "pic.jpg", OUT / "Documents.zip", OUT / "cat_new.jpg")
     assert verify_archive(OUT / "cat_new.jpg", ["Document1.txt", "Document2.txt"])
 
     # Задание 3: архив папки, присоединённый к PNG.

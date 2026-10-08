@@ -33,14 +33,16 @@ def find_patterns(password: str) -> list[str]:
 
 
 def sample_metrics(length: int, alphabet: str, count: int = 50) -> tuple[float, float, float]:
-    """Метрики распределения символов по выборке из 50 сгенерированных паролей."""
+    """Метрики по формулам (5)–(7) методических указаний для выборки из 50 паролей."""
     sample = "".join(generate_password(length, alphabet) for _ in range(count))
     frequencies = Counter(sample)
     total = len(sample)
     probabilities = [value / total for value in frequencies.values()]
-    real_entropy = -sum(probability * math.log2(probability) for probability in probabilities)
-    unevenness = sum((probability - 1 / len(alphabet)) ** 2 for probability in probabilities)
-    random_index = max(0.0, 1 - real_entropy / math.log2(len(alphabet)))
+    real_entropy_per_symbol = -sum(probability * math.log2(probability) for probability in probabilities)
+    real_entropy = length * real_entropy_per_symbol
+    theoretical_entropy = length * math.log2(len(alphabet))
+    unevenness = 1 - sum(probability**2 for probability in probabilities) / len(alphabet)
+    random_index = max(0.0, (theoretical_entropy - real_entropy) / theoretical_entropy)
     return real_entropy, unevenness, random_index
 
 
@@ -130,7 +132,8 @@ class PasswordApp(tk.Tk):
             f"Общая / удельная энтропия: {length * math.log2(len(ALPHABET)):.2f} бит / {math.log2(len(ALPHABET)):.2f} бит/символ\n"
             f"Реальная энтропия выборки / индекс случайности: {real_entropy:.3f} бит / {random_index:.3f}\n"
             f"Коэффициент неравномерности: {unevenness:.5f}\n"
-            f"Паттерны: {pattern_text}"
+            f"Паттерны: {pattern_text}\n"
+            f"Вывод: стойкость соответствует требованию (Pфакт {'≤' if probability <= target_p else '>'} Pзад)."
         )
         self.fill_comparison(speed, days)
         self.draw_charts()
